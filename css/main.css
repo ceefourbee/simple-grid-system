@@ -528,12 +528,16 @@ video {
  *
  * 1. Make it work with lists
  * 2. Required in older versions of IE when using list items as columns
+ * 3. With the power of modernizr we'll see if boxsizing is supported. If not set the container width to be fixed.
  */
 .container {
   width: 90%;
   max-width: 884px;
   margin: 0 auto;
   background-color: pink;
+}
+.mod-no-boxsizing .container {
+  width: 884px;
 }
 
 .grid-row {
