@@ -1,0 +1,19 @@
+/*
+ * feel the rythym with the vertical lines - guides for checking vertical rhythm
+ */
+body {
+	background-image: -webkit-linear-gradient(#000 .05em, transparent .05em);
+  background-image:    -moz-linear-gradient(#000 1px, transparent 1px);
+  background-image:     -ms-linear-gradient(#000 1px, transparent 1px);
+  background-image:      -o-linear-gradient(#000 1px, transparent 1px);
+  background-image:         linear-gradient(#000 1px, transparent 1px);
+  background-size: 100% 1.5em; 
+}
+
+/*
+ * check that lists don't contain anything other than li - bin after dev
+ */
+ol > :not(li),
+ul > :not(li) { 
+	outline: 5px solid #f00; 
+}

@@ -1,0 +1,25 @@
+// Font-size
+@mixin fontSize($size, $lineHeight) {
+  
+  font-size: $size+px;
+  font-size: $size / $base-font-size +rem;
+  line-height: ($lineHeight * 24) / $size;
+    
+}
+
+// Base margin
+@mixin baseMargin {
+  
+  margin: 0 0 24px;
+  margin: 0 0 1.5rem;
+  
+}
+
+// Box shadow prefix
+@mixin boxShadow($top, $left, $blur, $color, $inset:"") {
+
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+     -moz-box-shadow:$top $left $blur $color #{$inset};
+          box-shadow:$top $left $blur $color #{$inset};
+          
+}

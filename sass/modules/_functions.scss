@@ -1,0 +1,11 @@
+// Returns width of a column in a percentage value
+// Uses variables within the modules/_variables
+// This is a fix for IE browsers
+@function cw($columnCount,$marginCount) {  
+  @if $columnCount != $marginCount {  
+    @return ((($containerWidth / $columnCount) * $marginCount) - $columnMargin) / ($containerWidth + 1) * 100%;
+  }
+  @else if $columnCount == $marginCount  {
+    @return (($containerWidth / $columnCount) - $columnMargin) / ($containerWidth + 1) * 100%;
+  }  
+}

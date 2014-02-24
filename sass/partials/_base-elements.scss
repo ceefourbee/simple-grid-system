@@ -1,0 +1,140 @@
+* {
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 			box-sizing: border-box;
+}
+html {
+	font: 1em/1.5 serif; /* set base font-size to 16px and base line-height to 1.5 of this */
+}
+body {
+  color: $colour-charcoal-black;
+	background: $color-white;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/*
+ * Make images, embeds, objects and videos do there own thing
+ */
+img,
+embed,
+object,
+video {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+/*
+ * IE 6 does not recognise max-width, so set width instead with a little help from an IE6 specific hack
+ */
+* html img,
+* html embed,
+* html object,
+* html video {
+	width: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
+}
+
+/*
+ * Anchors
+ */
+a {
+  color: #3C78B4;
+  font-weight: 700;
+  border-bottom: 1px solid #3C78B4;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/*
+ * Give all block elements the base margin
+ */
+article,
+aside,
+audio,
+blockquote,
+canvas,
+dd,
+div,
+dl,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+noscript,
+ol,
+output,
+p,
+pre,
+section,
+table,
+ul,
+video {
+  @include baseMargin;
+}
